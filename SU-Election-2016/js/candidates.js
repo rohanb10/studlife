@@ -19,7 +19,7 @@ var candidates = [
 {
 	id:"vpp-2",
 	position:"Vice President of Public Relations",
-	name:"Rohan B",
+	name:"Yash Dalal",
 	class:"2017",
 	description: "cdfbhjdbjh@gmail.com",
 	img:""
