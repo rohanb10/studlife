@@ -10,11 +10,39 @@ body {
 
 .img-center {
 	margin: 0 auto;
+	max-height: 128px;
+	border-radius: 5px;
 }
 
 footer {
     margin: 50px 0;
 }
-.focus{
+
+.focus {
 	display: none;
+}
+
+.candidate {
+	padding-top: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.bio{
+    background-color: #e5e5e5;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.descriptor{
+    margin-top: 15px;
+}
+
+.selected{
+    background-color: #e5e5e5;
+    border-radius: 5px;
+}
+
+.twitter-timeline{
+	position: float;
 }
