@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>StudLife presents: SU Elections</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="page-header">SU Elections
+                    <small>hosted by Student Life</small>
+                </h1>
+                <div class="please-select">
+                    <h4 class="text-center">Please Select any of the candidates below to learn more about them</h4>
+                </div>
+                <div class="focus">
+                    <div class="col-md-4">
+                        <img class="img-circle img-responsive img-center" id="focus-img" src="http://placehold.it/200x200" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="container">
+                            <h3 id="focus-name">Placeholder</h3>
+                            <p id="focus-class">Placeholder</p>
+                            <p id="focus-description">Placeholder</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="page-header">President </h2>
+                    </div>
+                    <div class="col-md-4 col-xs-4 text-center" onclick="loadCandidate(this)" id="p1">
+                        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+                        <h3>Yash Dalal</h3>
+                    </div>
+                    <div class="col-md-4 col-xs-4 text-center" onclick="loadCandidate(this)" id="p2">
+                        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+                        <h3>Rohan Bhansali</h3>
+                    </div>
+                    <div class="col-md-4 col-xs-4 text-center" onclick="loadCandidate(this)" id="p3">
+                        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+                        <h3>John Smith</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="page-header">Vice President of Administration</h2>
+                    </div>
+                    <div class="col-md-4 col-xs-4 text-center" onclick="loadCandidate(this)" id="vp-a1">
+                        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+                        <h3>Yash Dalal</h3>
+                    </div>
+                    <div class="col-md-4 col-xs-4 text-center" onclick="loadCandidate(this)" id="vp-a2">
+                        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+                        <h3>Rohan Bhansali</h3>
+                    </div>
+                    <div class="col-md-4 col-xs-4 text-center" onclick="loadCandidate(this)" id="vp-a3">
+                        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+                        <h3>John Smith</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="page-header">Vice President of Finance</h2>
+                    </div>
+                    <div class="col-md-4 col-xs-4 text-center" onclick="loadCandidate(this)" id="vp-f1">
+                        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+                        <h3>Yash Dalal</h3>
+                    </div>
+                    <div class="col-md-4 col-xs-4 text-center" onclick="loadCandidate(this)" id="vp-f2">
+                        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+                        <h3>Rohan Bhansali</h3>
+                    </div>
+                    <div class="col-md-4 col-xs-4 text-center" onclick="loadCandidate(this)" id="vp-f3">
+                        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+                        <h3>John Smith</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="page-header">Vice President of Programming</h2>
+                    </div>
+                    <div class="col-md-4 col-xs-4 text-center" onclick="loadCandidate(this)" id="vp-p1">
+                        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+                        <h3>Yash Dalal</h3>
+                    </div>
+                    <div class="col-md-4 col-xs-4 text-center" onclick="loadCandidate(this)" id="vp-p2">
+                        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+                        <h3>Rohan Bhansali</h3>
+                    </div>
+                    <div class="col-md-4 col-xs-4 text-center" onclick="loadCandidate(this)" id="vp-p3">
+                        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+                        <h3>John Smith</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="page-header">Vice President of Public Relations</h2>
+                    </div>
+                    <div class="col-md-4 col-xs-4 text-center" onclick="loadCandidate(this)" id="vp-pr1">
+                        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+                        <h3>Yash Dalal</h3>
+                    </div>
+                    <div class="col-md-4 col-xs-4 text-center" onclick="loadCandidate(this)" id="vp-pr2">
+                        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+                        <h3>Rohan Bhansali</h3>
+                    </div>
+                    <div class="col-md-4 col-xs-4 text-center" onclick="loadCandidate(this)" id="vp-pr3">
+                        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+                        <h3>John Smith</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h2 class="page-header">&nbsp; </h2>
+                <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/studlife" data-widget-id="704471332977639424">Tweets by @studlife</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+        </div>
+        <hr>
+
+        <footer>
+            <div class="row">
+                <div class="col-md-12 pull-right">
+                    <p>Designed by Rohan Bhansali and Yash Dalal for Student Life and WUSTL Student Union. 2016</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        function loadCandidate(can){
+            var can_pos = $(can).attr('id');
+            //find from array of candidates
+            var can = $.grep(candidates, function(e){ 
+                return e.position == can_pos; 
+            });
+            var candidate = can[0];
+            //remove placeholder if no candidate is selected
+            $(".please-select").css('display', 'none');
+
+            //load candidate information into placeholder
+            $("#focus-img").attr('src', candidate.img);
+            $("#focus-name").text(candidate.name);
+            $("#focus-class").text(candidate.class);
+            //change display of candidate box
+            $(".focus").css('display', 'initial');
+            $(window).scrollTop(($('.focus').offset().top)-100);
+            
+        }
+        var candidates = [
+        {position: "vp-pr1", name:"Donda West", class:"Fresh Man", img:"silversurfer.png"},
+        {position: "vp-pr2", name:"North West", class:"Fresh Man", img:"kanye.jpg"},
+        {position: "vp-pr3", name:"Kanye West", class:"Fresh Man", },
+
+        ]
+    </script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-59198711-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
