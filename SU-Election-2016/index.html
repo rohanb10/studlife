@@ -42,7 +42,7 @@
 		<div class="col-md-8" id="positions">
 			<div class="row">
 				<div class="col-md-12">
-					<h2 class="page-header">PRESIDENT</h2>
+					<h2 class="page-header"><span class="page-header-border">PRESIDENT</span></h2>
                     <div class="col-md-3 col-xs-6 text-center candidate" id="p-1">
                         <img class=" img-responsive img-center" src="img/demetrikavadas.jpg" alt="">
                         <h4>Demetri Kavadas</h4>
@@ -65,7 +65,7 @@
            </div>
            <div class="row">
             <div class="col-md-12">
-               <h2 class="page-header">VP OF ADMINISTRATION</h2>
+               <h2 class="page-header"><span class="page-header-border">VP OF ADMINISTRATION</span></h2>
            </div>
            <div class="col-md-3 col-xs-6 text-center candidate" id="vpa-1">
                <img class=" img-responsive img-center" src="img/chriswilson.jpg" alt="">
@@ -88,7 +88,7 @@
    </div>
    <div class="row">
     <div class="col-md-12">
-       <h2 class="page-header">VP OF FINANCE</h2>
+       <h2 class="page-header"><span class="page-header-border">VP OF FINANCE</span></h2>
    </div>
    <div class="col-md-3 col-xs-6 text-center candidate" id="vpf-1">
        <img class=" img-responsive img-center" src="img/keatonschifer.jpg" alt="">
@@ -112,7 +112,7 @@
 </div>
 <div class="row">
     <div class="col-md-12">
-       <h2 class="page-header">VP OF PUBLIC RELATIONS</h2>
+       <h2 class="page-header"><span class="page-header-border">VP OF PUBLIC RELATIONS</span></h2>
    </div>
    <div class="col-md-3 col-xs-6 text-center candidate" id="vppr-1">
        <img class=" img-responsive img-center" src="img/ameliafong.jpg" alt="">
@@ -127,7 +127,7 @@
 </div>
 <div class="row">
     <div class="col-md-12">
-       <h2 class="page-header">VP OF PROGRAMMING</h2>
+       <h2 class="page-header"><span class="page-header-border">VP OF PROGRAMMING</span></h2>
    </div>
    <div class="col-md-3 col-xs-6 text-center candidate" id="vpp-1">
        <img class=" img-responsive img-center" src="img/richardwu.jpg" alt="">
@@ -149,7 +149,7 @@
 
 <footer>
  <div class="row">
-    <div class="col-md-12 pull-right">
+    <div class="col-md-12 foot">
        <p>Designed by Rohan Bhansali and Yash Dalal for Student Life and WUSTL Student Union. 2016</p>
    </div>
 </div>
@@ -161,82 +161,84 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/candidates.js"></script>
 <script type="text/javascript">
-$(window).load(function() {
- if(isMobile()){
-    $(".title").css('height', '100vh');
-    $(".info").css('padding', '30px 0px');
-}
-if(isPad()){
-    $(".info").css('padding', '15vh 0px');
-}
-});
+	function isMobile(){
+		if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+	function isPad(){
+		if(/iPad/i.test(navigator.userAgent)){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+	$(window).load(function() {
+		if(isMobile()){
+			$(".title").css('height', '100vh');
+			$(".info").css('padding', '30px 0px');
+			$(".bio-quote").css('line-height', '150%');
+			$(".arrow").css('display', 'none');
+		}
+		if(isPad()){
+			$(".info").css('padding', '15vh 0px');
+		}
+	});
 
-$('.candidate').click(function(event) {
- var can_id = this.id;
- var candidate = $.grep(candidates, function(e){ 
-    return e.id == can_id; 
-})[0];
- var position = can_id.substring(0,can_id.search("-"));
- var desk = $('#descriptor-'+position);
- $('.bio').each(function(index, el) {
-    $(this).hide();
-});
- if($(this).hasClass('selected')){
-    $(this).removeClass('selected');
-}
-else{
-    $('.candidate').each(function(index, el) {
-       $(this).removeClass('selected');
-   });
-    var firstName = (candidate.name).substring(0,(candidate.name).indexOf(' '));
-    $(this).addClass('selected');
-    var inject="";
-    inject+='<div class="bio"><h4>'+candidate.name+'</h4>';
-    inject+='<p class="class">Class of '+candidate.class +'</p>';
-    inject+='<p>'+candidate.description+'</p></div';
-    inject+="<p><a href='docs/"+candidate.document+"'download>";
-    inject+='Download '+firstName+'\'s full candidate statement.</a></p>';
-    desk.append(inject);
-    desk.show();
-}
-});
-var twitTop = $('.twitter-timeline').offset().top;
-$(window).scroll(function() {
- var currentScroll = $(window).scrollTop()+30;
- if (currentScroll >= twitTop && !isMobile()) {
-    $('.twitter-timeline').css({
-       position: 'fixed',
-       width: $(".col-md-4").width(),
-       top: '30px',
-       right: $('.twitter-timeline').offset().right
-   });
-} else {
-    $('.twitter-timeline').css({
-       position: 'static'
-   });
-}
-});
-function isMobile(){
- if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    return true;
-}
-else{
-    return false;
-}
-}
-function isPad(){
- if(/iPad/i.test(navigator.userAgent)){
-    return true;
-}
-else{
-    return false;
-}
-}
-$(".arrow-size").click(function() {
- $('html, body').animate({
-    scrollTop: $("#positions").offset().top
-}, 1000);
-});
+	$('.candidate').click(function(event) {
+		var can_id = this.id;
+		var candidate = $.grep(candidates, function(e){ 
+			return e.id == can_id; 
+		})[0];
+		var position = can_id.substring(0,can_id.search("-"));
+		var desk = $('#descriptor-'+position);
+		$('.bio').each(function(index, el) {
+			$(this).hide();
+		});
+		if($(this).hasClass('selected')){
+			$(this).removeClass('selected');
+		}
+		else{
+			$('.candidate').each(function(index, el) {
+				$(this).removeClass('selected');
+			});
+			var firstName = (candidate.name).substring(0,(candidate.name).indexOf(' '));
+			$(this).addClass('selected');
+			var inject="";
+			inject+='<div class="bio"><h3>'+candidate.name+'</h3>';
+			inject+='<p class="class">Class of '+candidate.class +'</p>';
+			inject+='<p class="bio-quote"><span class="pull-quotes">&ldquo;</span>&nbsp;'+candidate.description+'<span class="pull-quotes">&rdquo;</span></p>';
+			inject+="<p><a href='docs/"+candidate.document+"'download>";
+			inject+='Download '+firstName+'\'s full candidate statement.</a></p></div>';
+			desk.append(inject);
+			desk.show();
+		}
+	});
+	var twitTop = $('.twitter-timeline').offset().top;
+	$(window).scroll(function() {
+		var currentScroll = $(window).scrollTop()+30;
+		if (currentScroll >= twitTop && !isMobile()) {
+			$('.twitter-timeline').css({
+				position: 'fixed',
+				width: $(".col-md-4").width(),
+				top: '30px',
+				right: $('.twitter-timeline').offset().right
+			});
+		} else {
+			$('.twitter-timeline').css({
+				position: 'static'
+			});
+		}
+	});
+	$(".arrow-size").click(function() {
+		$('html, body').animate({
+			scrollTop: $("#positions").offset().top
+		}, 1000);
+	});
 </script>
 
 <script>
