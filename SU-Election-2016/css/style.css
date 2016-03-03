@@ -47,7 +47,30 @@ footer {
     border-radius: 5px;
 
 }
+.header{
+	color:white;
+	letter-spacing: 2px;
+	font-weight: 900;
+}
 
-.twitter-timeline{
-	position: float;
+.title {
+	background-color: #d31c13;
+}
+
+.info{
+	font-family: Verdana, sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 200%;
+	padding: 100px 0px;
+	color: white;
+}
+
+.info >p> a{
+	color: white;
+	text-decoration: underline;
+}
+
+.img-size{
+	width: 200px;
 }
