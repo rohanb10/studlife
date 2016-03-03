@@ -5,7 +5,7 @@
  */
 
  body {
- 	/*padding-top: 70px;  Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+ 	background-color: #f4f4f4;
  }
 
  .img-center {
@@ -14,6 +14,10 @@
  	/*margin-right: 0;*/
  	max-height: 128px;
  	border-radius: 5px;
+ }
+
+ h4{
+ 	letter-spacing: 1px;
  }
 
  footer {
@@ -30,12 +34,19 @@
  	padding-right: 0px;
  	margin-left: 0px;
  	margin-right: 0px; 
+ 	cursor: pointer;
  }
 
  .bio{
  	background-color: #e5e5e5;
- 	padding: 5px;
+ 	padding: 30px 50px;
  	border-radius: 5px;
+ }
+
+ .page-header{
+ 	font-size: 22px;
+ 	letter-spacing: 2px;
+ 	font-weight: 900;
  }
 
  .descriptor{
@@ -43,10 +54,15 @@
  }
 
  .selected{
- 	background-color: #e5e5e5;
  	border-radius: 5px;
+ 	cursor: pointer;
 
  }
+
+ .selected > img{
+ 	border: 5px solid #d31c13;
+ }
+
  .header{
  	color:white;
  	letter-spacing: 2px;
@@ -63,7 +79,7 @@
  	font-size: 15px;
  	font-weight: 500;
  	line-height: 200%;
- 	padding: 25vh 0px 0px 0px;
+ 	padding: 20vh 0px 0px 0px;
  	color: white;
  }
  .arrow{
