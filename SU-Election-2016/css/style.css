@@ -4,73 +4,90 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-}
+ body {
+ 	/*padding-top: 70px;  Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+ }
 
-.img-center {
-	margin: auto;
-	/*margin-left: 0;*/
-	/*margin-right: 0;*/
-	max-height: 128px;
-	border-radius: 5px;
-}
+ .img-center {
+ 	margin: auto;
+ 	/*margin-left: 0;*/
+ 	/*margin-right: 0;*/
+ 	max-height: 128px;
+ 	border-radius: 5px;
+ }
 
-footer {
-    margin: 50px 0;
-}
+ footer {
+ 	margin: 50px 0;
+ }
 
-.focus {
-	display: none;
-}
+ .focus {
+ 	display: none;
+ }
 
-.candidate {
-	padding-top: 15px;
-	padding-left: 0px;
-	padding-right: 0px;
-	margin-left: 0px;
-	margin-right: 0px; 
-}
+ .candidate {
+ 	padding-top: 15px;
+ 	padding-left: 0px;
+ 	padding-right: 0px;
+ 	margin-left: 0px;
+ 	margin-right: 0px; 
+ }
 
-.bio{
-    background-color: #e5e5e5;
-    padding: 5px;
-    border-radius: 5px;
-}
+ .bio{
+ 	background-color: #e5e5e5;
+ 	padding: 5px;
+ 	border-radius: 5px;
+ }
 
-.descriptor{
-    margin-top: 15px;
-}
+ .descriptor{
+ 	margin-top: 15px;
+ }
 
-.selected{
-    background-color: #e5e5e5;
-    border-radius: 5px;
+ .selected{
+ 	background-color: #e5e5e5;
+ 	border-radius: 5px;
 
-}
-.header{
-	color:white;
-	letter-spacing: 2px;
-	font-weight: 900;
-}
+ }
+ .header{
+ 	color:white;
+ 	letter-spacing: 2px;
+ 	font-weight: 900;
+ }
 
-.title {
-	background-color: #d31c13;
-}
+ .title {
+ 	background-color: #d31c13;
+ 	height: 100vh;
+ }
 
-.info{
-	font-family: Verdana, sans-serif;
-	font-size: 15px;
-	font-weight: 500;
-	line-height: 200%;
-	padding: 100px 0px;
-	color: white;
-}
+ .info{
+ 	font-family: Verdana, sans-serif;
+ 	font-size: 15px;
+ 	font-weight: 500;
+ 	line-height: 200%;
+ 	padding: 25vh 0px 0px 0px;
+ 	color: white;
+ }
+ .arrow{
+ 	width: 100%;
+ 	padding-top: 15vh;
+ 	bottom: 0px;
+ 	/*margin: 0 auto;*/
+ 	text-align: center;
+ }
 
-.info >p> a{
-	color: white;
-	text-decoration: underline;
-}
+ .info >p> a{
+ 	color: white;
+ 	text-decoration: underline;
+ }
 
-.img-size{
-	width: 200px;
-}
+ .img-size{
+ 	width: 200px;
+ }
+
+ .arrow-size{
+ 	width: 72px;
+ 	cursor: pointer;
+ }
+
+ .class {
+ 	color: #515151;
+ }
