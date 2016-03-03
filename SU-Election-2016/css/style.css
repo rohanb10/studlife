@@ -122,6 +122,11 @@
  	font-size: 30px;
  	font-weight: 900;
 }
+.foot-parent{
+	position: relative;
+}
 .foot {
-	padding: 50px;
+	position: absolute;
+	padding: 100px 0 0 0;
+	bottom: 0px;
 }

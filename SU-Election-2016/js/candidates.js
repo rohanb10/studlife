@@ -49,7 +49,7 @@ var candidates = [
 	position:"Vice President of Administration",
 	name:"Sankalp Kapur",
 	class:"2018",
-	description: "",
+	description: "In terms of advocacy efforts, I want to work specifically towards raising awareness about mental health issues by working closely with Uncle Joes, and starting a university wide project with them at the centre to make students on this campus more aware and to continue the great work Uncle Joes does to be a resource for all students...Another project that I am interested to tackle is to bring the collegiate readership program into the modern day. At this time, SU spends nearly $50,000 to bring newspapers to campus. I believe that an effort should be made to move in the direction of having electronic copies of newspapers provided to us so that our activities fee is spent in a way that we as students get the most mileage out of it.",
 	img:"img/",
 	document:"Sankalp Kapur_2018_ExecVPAdmin.docx"
 },
@@ -58,7 +58,7 @@ var candidates = [
 	position:"Vice President of Finance",
 	name:"Keaton Schifer",
 	class:"2018",
-	description: "",
+	description: "I will strive to accomplish these initiatives: give students a stronger voice with the general budget…enhance financial feedback to student groups and treasurers…improve engagement with students and groups…[and] maintain an efficient student group budgeting process.",
 	img:"img/",
 	document:"Keaton Schifer_2018_ExecVPFinance.docx"
 },
@@ -67,7 +67,7 @@ var candidates = [
 	position:"Vice President of Finance",
 	name:"Omar Abdelaziz",
 	class:"2018",
-	description: "",
+	description: "If I am elected as Vice President of Finance, I will work closely with SU treasury representatives to analyze and reform all student group interactions, bringing together both sides of the table. Additionally, I would like to dig deeper into WashU imposed charges (that come out to over $800K or 25% of SU’s budget) and renegotiate the terms with administrators to make sure that students groups get every possible dime of the student activities fee.",
 	img:"img/",
 	document:"Omar Abdelaziz_2018_ExecVPFinance.docx"
 },
@@ -76,7 +76,7 @@ var candidates = [
 	position:"Vice President of Finance",
 	name:"Vikram Biswas",
 	class:"2017",
-	description: "",
+	description: "My main goal to increase transparency is to make the allocation of the Carry Forward an interactive process with students through direct feedback…To increase engagement, I plan to begin a “Finance Fridays” initiative. Every Friday, I along with Treasury leadership will present on the past week in SU Finance to anyone interested. It will be a great opportunity for students to learn more about the allocation process. To increase accountability, I want to extend the term of Budget Committee members to after allocations so that student groups have an opportunity to hear about their allocation and genuinely understand their budget.",
 	img:"img/",
 	document:"Vikram Biswas_2017_ExecVPFinance.docx"
 },
@@ -85,7 +85,7 @@ var candidates = [
 	position:"Vice President of Public Relations",
 	name:"Amelia Fong",
 	class:"2018",
-	description: "",
+	description: "As VP PR my goal is to increase Student Union’s outreach and transparency. Recent debate surrounding the cancellation of Fall WILD highlight SU’s need to frequently engage with the student population and include student input in the decision-making process. This incident has also affected SU’s relationship with the student body. I hope to build back the student body’s trust in the SU brand through the expansion of existing outreach campaigns to all SU entities.",
 	img:"img/",
 	document:"Amelia Fong_2018_ExecVPPR.docx"
 },
@@ -94,7 +94,7 @@ var candidates = [
 	position:"Vice President of Programming",
 	name:"Richard Wu",
 	class:"2018",
-	description: "",
+	description: "If elected to be your new VP of Programming, I would turn my attention first to our wonderful opportunity to host the presidential debates. Events such as a rally featuring our political/advocacy groups, mock debates, voter registration, and speaker presentations would help the world see the vibrant and interactive community Wash. U. has to offer. For student groups that struggle to exchange money during tabling I would work towards streamlining the use of electronic payments with apps such as Venmo. And of course with the school sacrificing fall WILD for the debates next year, I will work closely with SPB to ensure that the quality and quantity of student programming is not compromised.",
 	img:"img/",
 	document:"Richard Wu _2018_ExecVPProgramming.docx"
 },
