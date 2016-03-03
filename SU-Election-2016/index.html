@@ -112,7 +112,7 @@
                             </div>
                         </div>
                     </div>
-                     <div class="row">
+                    <div class="row">
                         <div class="col-md-12">
                             <h2 class="page-header">Vice President of Programming</h2>
                         </div>
@@ -170,6 +170,22 @@
                     $(this).addClass('selected');
                     desk.append('<div class="bio"><h4>'+candidate.name+'</h4><p>'+candidate.description+'</p></div');
                     desk.show();
+                }
+            });
+            var twitTop = $('.twitter-timeline').offset().top;
+            $(window).scroll(function() {
+                var currentScroll = $(window).scrollTop();
+                if (currentScroll >= twitTop) {
+                    $('.twitter-timeline').css({
+                        position: 'fixed',
+                        width: $(".col-md-4").width(),
+                        top: '30px',
+                        right: $('.twitter-timeline').offset().right
+                    });
+                } else {
+                    $('.twitter-timeline').css({
+                        position: 'static'
+                    });
                 }
             });
         </script>
