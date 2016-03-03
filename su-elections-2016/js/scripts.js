@@ -16,13 +16,16 @@ function isMobile(){
 	}
 	$(window).load(function() {
 		if(isMobile()){
-			$(".title").css('height', '100vh');
+			$(".title").css('height', '110vh');
 			$(".info").css('padding', '30px 0px');
 			$(".bio-quote").css('line-height', '150%');
 			$(".arrow").css('display', 'none');
 		}
 		if(isPad()){
 			$(".info").css('padding', '15vh 0px');
+		}
+		if($(".arrow").offset().top > window.height()){
+			$(".arrow").css('display', 'none');
 		}
 	});
 
