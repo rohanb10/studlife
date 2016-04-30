@@ -40,7 +40,7 @@ var candidates = [
 	position:"Vice President of Administration",
 	name:"Noah Silverman",
 	class:"2019",
-	description: "Student Union executives are often faced with challenging decisions that can have unpopular ramifications. I am prepared for this, and will ensure that Student Union maintains the highest standards for transparency during the decision-making process. One of the ways I will achieve this is by livestreaming and videotaping our Senate, Treasury, and General Budget Meetings. I also propose a public Student Union calendar that will enable students to know when and where Student Union meetings take place, so you can express your views. Finally, I will work with the next Executive Council to ensure that the student voice is given appropriate time and space during other meetings. One of the ways I will achieve [transparency] is by livestreaming and videotaping our Senate, Treasury, and General Budget Meetings. I also propose a public Student Union calendar that will enable students to know when and where Student Union meetings take place, so you can express your views. Finally, I will work with the next Executive Council to ensure that the student voice is given appropriate time and space during other meetings.",
+	description: "One of the ways I will achieve [transparency] is by livestreaming and videotaping our Senate, Treasury, and General Budget Meetings. I also propose a public Student Union calendar that will enable students to know when and where Student Union meetings take place, so you can express your views. Finally, I will work with the next Executive Council to ensure that the student voice is given appropriate time and space during other meetings.",
 	img:"img/",
 	document:"Noah Silverman_2019_ExecVPAdmin.docx"
 },
