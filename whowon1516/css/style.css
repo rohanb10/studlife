@@ -22,7 +22,7 @@ a {
 	height:100vh;
 	width:100%;
 	/* background-color:#C82820; */
-	background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('img/gc.jpg');
+	background-image:url('../img/cover.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	display: flex;
@@ -39,6 +39,10 @@ a {
 	max-width:300px;
 }
 
+.who-won-img {
+	width:80px;	
+}
+
 .splash h1 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 4em;
@@ -48,7 +52,7 @@ a {
 
 .arrow {
 	position:absolute;
-	top:80vh;
+	top:85vh;
 	left: 0;
 	right: 0;
 	margin-left:auto;
@@ -62,10 +66,10 @@ a {
 }
 
 .cat-list span {
-	text-align:center;
-	color: #000000;
-	font-size: 1.7em;
-	border-bottom:2px solid #C82820;
+	/* text-align:center; */
+	/* color: #000000; */
+	/* font-size: 1.7em; */
+	/* border-bottom:2px solid #C82820; */
 }
 
 
@@ -104,8 +108,9 @@ a {
 }
 
 
-.text-area a {
+.text-area a, .text-area a:visited {
 	color: rgb(55, 58, 60);
+	text-decoration: none;
 	border-bottom: 1px solid #C82820;
 }
 
@@ -114,6 +119,62 @@ a {
 	text-decoration:none;
 }
 
+.text-area h5{
+	font-size: 1em;
+}
+
 .section-header a{
 	border-bottom: none;
+}
+
+.gif-container {
+	padding: 25px;
+}
+
+.gif-container img{
+	height:auto;
+	min-width:100%;
+	max-width:100%;
+}
+.gif-container p {
+	line-height:0.5;
+	transform: translateY(-9px);
+	-webkit-transform: translateY(-9px);
+	font-size: 0.7em;
+}
+.gif-container p a, .gif-container p a:visited {
+	background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+	color: #FFFFFF;
+	padding: 1px 3px;
+	border-bottom: none;
+	text-decoration: none;
+}
+.gif-container p a:hover {
+	color: #FFFFFF;
+	border-bottom: 2px solid #C82820;
+}
+
+.seattle{
+	font-size: 2em;
+	font-style: italic;
+}
+
+.red-underline {
+	padding: 0 5px;
+	font-size: 1.2em;
+	border-bottom: 2px solid #C82820;
+}
+
+.copyright{
+	font-size: 0.8em;
+	color: #777777;
+}
+
+.sup-small {
+	vertical-align: super;
+	font-size: small;
+}
+
+a.no-underline {
+	border-bottom:none;
 }
