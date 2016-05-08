@@ -22,7 +22,7 @@ A landing page for a 5 part investigative series that looked into the history of
 
 ----------
 
-**Student Life presents SU Elections** 
+**SU Elections** 
 | *March 2016* - [wwww.studlife.com/su-elections-2016](http://wwww.studlife.com/su-elections-2016)
 
 A platform to showcase candidates for the WUSTL Student Union Elections on March 3, 2016.
